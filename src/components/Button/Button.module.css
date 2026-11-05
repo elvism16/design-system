@@ -1,0 +1,103 @@
+@layer components {
+  .button {
+    /* Mindestgröße: 44 px (WCAG 2.5.8 verlangt nur 24 px, 2.5.5 empfiehlt 44 px) */
+    --_min-size: 2.75rem;
+
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-block-size: var(--_min-size);
+    min-inline-size: var(--_min-size);
+    padding-block: var(--ds-spacing-inset-sm);
+    padding-inline: var(--ds-spacing-inset-lg);
+
+    border: var(--ds-border-width-default) solid transparent;
+    border-radius: var(--ds-radius-control);
+
+    font-family: var(--ds-typography-label-font-family), system-ui, sans-serif;
+    font-size: var(--ds-typography-label-font-size);
+    font-weight: var(--ds-typography-label-font-weight);
+    line-height: var(--ds-typography-label-line-height);
+    letter-spacing: var(--ds-typography-label-letter-spacing);
+    text-align: center;
+
+    cursor: pointer;
+    transition:
+      background-color 120ms ease,
+      border-color 120ms ease,
+      color 120ms ease;
+  }
+
+  /* Fokus: zweiteiliger Ring (innen hell, außen dunkel) bleibt auf jedem Hintergrund sichtbar */
+  .button:focus-visible {
+    outline: 2px solid var(--ds-color-focus-ring-outer);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--ds-color-focus-ring-inner);
+  }
+
+  /* ---------- primary ---------- */
+  .primary {
+    background-color: var(--ds-button-primary-background);
+    border-color: var(--ds-button-primary-border);
+    color: var(--ds-button-primary-content);
+  }
+
+  @media (hover: hover) {
+    .primary:hover:not(:disabled) {
+      background-color: var(--ds-color-action-primary-hover-background);
+      border-color: var(--ds-color-action-primary-hover-border);
+      color: var(--ds-color-action-primary-hover-content);
+    }
+  }
+
+  .primary:active:not(:disabled) {
+    background-color: var(--ds-color-action-primary-pressed-background);
+    border-color: var(--ds-color-action-primary-pressed-border);
+    color: var(--ds-color-action-primary-pressed-content);
+  }
+
+  .primary:disabled {
+    background-color: var(--ds-color-action-primary-disabled-background);
+    border-color: var(--ds-color-action-primary-disabled-border);
+    color: var(--ds-color-action-primary-disabled-content);
+  }
+
+  /* ---------- outline ---------- */
+  .outline {
+    background-color: var(--ds-button-outline-background);
+    border-color: var(--ds-button-outline-border);
+    color: var(--ds-button-outline-content);
+  }
+
+  @media (hover: hover) {
+    .outline:hover:not(:disabled) {
+      background-color: var(--ds-color-action-primary-outline-hover-background);
+      border-color: var(--ds-color-action-primary-outline-hover-border);
+      color: var(--ds-color-action-primary-outline-hover-content);
+    }
+  }
+
+  /* Für Outline gibt es in Figma keinen Pressed-State: vorerst Hover-Werte */
+  .outline:active:not(:disabled) {
+    background-color: var(--ds-color-action-primary-outline-hover-background);
+    border-color: var(--ds-color-action-primary-outline-hover-border);
+    color: var(--ds-color-action-primary-outline-hover-content);
+  }
+
+  .outline:disabled {
+    background-color: var(--ds-color-action-primary-outline-disabled-background);
+    border-color: var(--ds-color-action-primary-outline-disabled-border);
+    color: var(--ds-color-action-primary-outline-disabled-content);
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .button {
+      transition: none;
+    }
+  }
+}

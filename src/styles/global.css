@@ -1,0 +1,6 @@
+@layer reset, tokens, base, components;
+
+@import '../../tokens/build/theme-light.css' layer(tokens);
+@import '../../tokens/build/theme-dark.css' layer(tokens);
+
+:root { color-scheme: light dark; }

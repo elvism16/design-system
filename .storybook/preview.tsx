@@ -1,11 +1,33 @@
-import type { Preview } from '@storybook/react-vite'
+import type { Preview } from '@storybook/react-vite';
+import '../src/styles/global.css';
 
 const preview: Preview = {
+  initialGlobals: { theme: 'light' },
+
+  globalTypes: {
+    theme: {
+      description: 'Theme',
+      toolbar: {
+        title: 'Theme',
+        icon: 'circlehollow',
+        items: ['light', 'dark'],
+        dynamicTitle: true,
+      },
+    },
+  },
+
+  decorators: [
+    (Story, context) => {
+      document.documentElement.dataset.theme = context.globals.theme;
+      return <Story />;
+    },
+  ],
+
   parameters: {
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
 
@@ -13,8 +35,8 @@ const preview: Preview = {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
       // 'off' - skip a11y checks entirely
-      test: 'todo'
-    }
+      test: 'error',
+    },
   },
 };
 
