@@ -1,0 +1,392 @@
+[
+  {
+    "name": "--ds-color-surface-canvas",
+    "group": "surface",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-surface-default",
+    "group": "surface",
+    "value": "#081624",
+    "reference": "{primitive.color.neutral.925}"
+  },
+  {
+    "name": "--ds-color-surface-raised",
+    "group": "surface",
+    "value": "#101c28",
+    "reference": "{primitive.color.neutral.900}"
+  },
+  {
+    "name": "--ds-color-surface-subtle",
+    "group": "surface",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-surface-brand",
+    "group": "surface",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-surface-inverse",
+    "group": "surface",
+    "value": "#ffffff",
+    "reference": "{primitive.color.neutral.0}"
+  },
+  {
+    "name": "--ds-color-content-primary",
+    "group": "content",
+    "value": "#f1f3f4",
+    "reference": "{primitive.color.neutral.50}"
+  },
+  {
+    "name": "--ds-color-content-secondary",
+    "group": "content",
+    "value": "#e5e8e9",
+    "reference": "{primitive.color.neutral.100}"
+  },
+  {
+    "name": "--ds-color-content-muted",
+    "group": "content",
+    "value": "#bfc4cc",
+    "reference": "{primitive.color.neutral.300}"
+  },
+  {
+    "name": "--ds-color-content-placeholder",
+    "group": "content",
+    "value": "#bfc4cc",
+    "reference": "{primitive.color.neutral.300}"
+  },
+  {
+    "name": "--ds-color-content-disabled",
+    "group": "content",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-content-on-brand",
+    "group": "content",
+    "value": "#ffffff",
+    "reference": "{primitive.color.neutral.0}"
+  },
+  {
+    "name": "--ds-color-content-on-cta",
+    "group": "content",
+    "value": "#ffffff",
+    "reference": "{primitive.color.neutral.0}"
+  },
+  {
+    "name": "--ds-color-content-inverse",
+    "group": "content",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-content-link",
+    "group": "content",
+    "value": "#a3c2ff",
+    "reference": "{primitive.color.blue.300}"
+  },
+  {
+    "name": "--ds-color-content-link-hover",
+    "group": "content",
+    "value": "#ccddff",
+    "reference": "{primitive.color.blue.100}"
+  },
+  {
+    "name": "--ds-color-icon-primary",
+    "group": "icon",
+    "value": "#f1f3f4",
+    "reference": "{semantic.color.content.primary}"
+  },
+  {
+    "name": "--ds-color-icon-secondary",
+    "group": "icon",
+    "value": "#e5e8e9",
+    "reference": "{semantic.color.content.secondary}"
+  },
+  {
+    "name": "--ds-color-icon-muted",
+    "group": "icon",
+    "value": "#bfc4cc",
+    "reference": "{semantic.color.content.muted}"
+  },
+  {
+    "name": "--ds-color-brand-main",
+    "group": "brand",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-brand-blue",
+    "group": "brand",
+    "value": "#223077",
+    "reference": "{primitive.color.blue.800}"
+  },
+  {
+    "name": "--ds-color-brand-red",
+    "group": "brand",
+    "value": "#c6224b",
+    "reference": "{primitive.color.red.700}"
+  },
+  {
+    "name": "--ds-color-border-default",
+    "group": "border",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-border-subtle",
+    "group": "border",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-border-strong",
+    "group": "border",
+    "value": "#e5e8e9",
+    "reference": "{primitive.color.neutral.100}"
+  },
+  {
+    "name": "--ds-color-border-brand",
+    "group": "border",
+    "value": "#a3c2ff",
+    "reference": "{primitive.color.blue.300}"
+  },
+  {
+    "name": "--ds-color-focus-ring-outer",
+    "group": "focus",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-focus-ring-inner",
+    "group": "focus",
+    "value": "#ffffff",
+    "reference": "{primitive.color.neutral.0}"
+  },
+  {
+    "name": "--ds-color-action-primary-background",
+    "group": "action",
+    "value": "#c6224b",
+    "reference": "{primitive.color.red.700}"
+  },
+  {
+    "name": "--ds-color-action-primary-border",
+    "group": "action",
+    "value": "#c6224b",
+    "reference": "{primitive.color.red.700}"
+  },
+  {
+    "name": "--ds-color-action-primary-content",
+    "group": "action",
+    "value": "#ffffff",
+    "reference": "{semantic.color.content.on-cta}"
+  },
+  {
+    "name": "--ds-color-action-primary-hover-background",
+    "group": "action",
+    "value": "#f54b75",
+    "reference": "{primitive.color.red.500}"
+  },
+  {
+    "name": "--ds-color-action-primary-hover-border",
+    "group": "action",
+    "value": "#f54b75",
+    "reference": "{primitive.color.red.500}"
+  },
+  {
+    "name": "--ds-color-action-primary-hover-content",
+    "group": "action",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-action-primary-pressed-background",
+    "group": "action",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-action-primary-pressed-border",
+    "group": "action",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-action-primary-pressed-content",
+    "group": "action",
+    "value": "#011224",
+    "reference": "{primitive.color.neutral.950}"
+  },
+  {
+    "name": "--ds-color-action-primary-disabled-background",
+    "group": "action",
+    "value": "#2b323e",
+    "reference": "{primitive.color.neutral.800}"
+  },
+  {
+    "name": "--ds-color-action-primary-disabled-border",
+    "group": "action",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-action-primary-disabled-content",
+    "group": "action",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-background",
+    "group": "action",
+    "value": "rgba(0, 0, 0, 0)",
+    "reference": "{primitive.color.transparent}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-border",
+    "group": "action",
+    "value": "#c6224b",
+    "reference": "{primitive.color.red.700}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-content",
+    "group": "action",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-hover-background",
+    "group": "action",
+    "value": "#3a1624",
+    "reference": "{primitive.color.red.1000}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-hover-border",
+    "group": "action",
+    "value": "#c6224b",
+    "reference": "{primitive.color.red.700}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-hover-content",
+    "group": "action",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-disabled-background",
+    "group": "action",
+    "value": "rgba(0, 0, 0, 0)",
+    "reference": "{primitive.color.transparent}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-disabled-border",
+    "group": "action",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-action-primary-outline-disabled-content",
+    "group": "action",
+    "value": "#7d828a",
+    "reference": "{primitive.color.neutral.500}"
+  },
+  {
+    "name": "--ds-color-status-error-content",
+    "group": "status",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-status-error-icon",
+    "group": "status",
+    "value": "#f8678b",
+    "reference": "{semantic.color.status.error.content}"
+  },
+  {
+    "name": "--ds-color-status-error-background",
+    "group": "status",
+    "value": "#3a1624",
+    "reference": "{primitive.color.red.1000}"
+  },
+  {
+    "name": "--ds-color-status-error-border",
+    "group": "status",
+    "value": "#f8678b",
+    "reference": "{primitive.color.red.400}"
+  },
+  {
+    "name": "--ds-color-status-success-content",
+    "group": "status",
+    "value": "#6dd6a0",
+    "reference": "{primitive.color.green.300}"
+  },
+  {
+    "name": "--ds-color-status-success-icon",
+    "group": "status",
+    "value": "#6dd6a0",
+    "reference": "{semantic.color.status.success.content}"
+  },
+  {
+    "name": "--ds-color-status-success-background",
+    "group": "status",
+    "value": "#102a20",
+    "reference": "{primitive.color.green.1000}"
+  },
+  {
+    "name": "--ds-color-status-success-border",
+    "group": "status",
+    "value": "#6dd6a0",
+    "reference": "{primitive.color.green.300}"
+  },
+  {
+    "name": "--ds-color-status-warning-content",
+    "group": "status",
+    "value": "#ffd166",
+    "reference": "{primitive.color.amber.300}"
+  },
+  {
+    "name": "--ds-color-status-warning-icon",
+    "group": "status",
+    "value": "#ffd166",
+    "reference": "{semantic.color.status.warning.content}"
+  },
+  {
+    "name": "--ds-color-status-warning-background",
+    "group": "status",
+    "value": "#352a14",
+    "reference": "{primitive.color.amber.1000}"
+  },
+  {
+    "name": "--ds-color-status-warning-border",
+    "group": "status",
+    "value": "#ffd166",
+    "reference": "{primitive.color.amber.300}"
+  },
+  {
+    "name": "--ds-color-status-information-content",
+    "group": "status",
+    "value": "#a3c2ff",
+    "reference": "{primitive.color.blue.300}"
+  },
+  {
+    "name": "--ds-color-status-information-icon",
+    "group": "status",
+    "value": "#a3c2ff",
+    "reference": "{semantic.color.status.information.content}"
+  },
+  {
+    "name": "--ds-color-status-information-background",
+    "group": "status",
+    "value": "#09172a",
+    "reference": "{primitive.color.blue.1000}"
+  },
+  {
+    "name": "--ds-color-status-information-border",
+    "group": "status",
+    "value": "#a3c2ff",
+    "reference": "{primitive.color.blue.300}"
+  }
+]

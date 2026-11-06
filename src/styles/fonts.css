@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'TT Interfaces'; /* exakt wie der Token-Wert */
+  src: url('../assets/fonts/TTInterphases_Variable.woff2') format('woff2');
+  font-weight: 100 900; /* Gewichtsbereich der Variable Font, siehe unten */
+  font-style: normal;
+  font-display: swap;
+}

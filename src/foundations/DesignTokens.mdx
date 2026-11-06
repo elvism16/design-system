@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { DesignTokenDocBlock } from 'storybook-design-token';
+import { ColorComparison } from './ColorComparison';
+
+<Meta title="Foundations/Design Tokens" />
+
+# Design Tokens
+
+Die Tabellen der Primitives, der Typografie usw. zeigen die Light-Werte. Die semantischen Farben stehen unten für Light und Dark nebeneinander.
+
+## Farben Semantic (Light und Dark)
+<ColorComparison />
+
+## Farben Primitive
+<DesignTokenDocBlock categoryName="Farben Primitive" viewType="card" maxHeight={600} />
+
+## Typografie Semantic
+<DesignTokenDocBlock categoryName="Typografie Semantic" viewType="table" maxHeight={600} />
+
+## Typografie Primitive
+<DesignTokenDocBlock categoryName="Typografie Primitive" viewType="table" maxHeight={600} />
+
+## Spacing
+<DesignTokenDocBlock categoryName="Spacing" viewType="table" />
+
+## Radius und Rahmen
+<DesignTokenDocBlock categoryName="Radius und Rahmen" viewType="table" />
+
+## Komponenten
+<DesignTokenDocBlock categoryName="Komponenten" viewType="table" />

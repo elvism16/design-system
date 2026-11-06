@@ -18,6 +18,8 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/* ---------- Light ---------- */
+
 export const Primary: Story = { args: { variant: 'primary' } };
 
 export const Outline: Story = { args: { variant: 'outline' } };
@@ -49,4 +51,27 @@ export const KeyboardActivation: Story = {
     await userEvent.keyboard(' ');
     await expect(args.onClick).toHaveBeenCalledTimes(2);
   },
+};
+
+/* ---------- Dark ----------
+   Eigene Stories, damit die a11y-Prüfung (axe, inkl. Kontrast) beide Modi abdeckt.
+   '!autodocs' hält sie aus der Docs-Seite heraus, weil der Theme-Decorator dort
+   sonst die ganze Seite auf Dark umstellen würde. */
+
+export const PrimaryDark: Story = {
+  args: { variant: 'primary' },
+  globals: { theme: 'dark' },
+  tags: ['!autodocs'],
+};
+
+export const OutlineDark: Story = {
+  args: { variant: 'outline' },
+  globals: { theme: 'dark' },
+  tags: ['!autodocs'],
+};
+
+export const OverviewDark: Story = {
+  ...Overview,
+  globals: { theme: 'dark' },
+  tags: ['!autodocs'],
 };

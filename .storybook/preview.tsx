@@ -17,11 +17,18 @@ const preview: Preview = {
   },
 
   decorators: [
-    (Story, context) => {
-      document.documentElement.dataset.theme = context.globals.theme;
-      return <Story />;
-    },
-  ],
+  (Story, context) => {
+    document.documentElement.dataset.theme = context.globals.theme;
+
+    // Inline-Stile schlagen jede Layer-Reihenfolge; in der Docs-Ansicht bleibt Storybooks eigener Hintergrund
+    if (context.viewMode !== 'docs') {
+      document.body.style.backgroundColor = 'var(--ds-color-surface-canvas)';
+      document.body.style.color = 'var(--ds-color-content-primary)';
+    }
+
+    return <Story />;
+  },
+],
 
   parameters: {
     controls: {

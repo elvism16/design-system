@@ -1,0 +1,251 @@
+/* Nur für die Doku in Storybook (storybook-design-token). Nicht in die App einbinden. */
+:root {
+
+  /**
+  * @tokens Farben Primitive
+  */
+
+  --ds-primitive-color-neutral-0: #ffffff; /* @presenter Color */
+  --ds-primitive-color-neutral-50: #f1f3f4; /* @presenter Color */
+  --ds-primitive-color-neutral-100: #e5e8e9; /* @presenter Color */
+  --ds-primitive-color-neutral-300: #bfc4cc; /* @presenter Color */
+  --ds-primitive-color-neutral-500: #7d828a; /* @presenter Color */
+  --ds-primitive-color-neutral-600: #5d6570; /* @presenter Color */
+  --ds-primitive-color-neutral-700: #434a55; /* @presenter Color */
+  --ds-primitive-color-neutral-800: #2b323e; /* @presenter Color */
+  --ds-primitive-color-neutral-900: #101c28; /* @presenter Color */
+  --ds-primitive-color-neutral-925: #081624; /* @presenter Color */
+  --ds-primitive-color-neutral-950: #011224; /* @presenter Color */
+  --ds-primitive-color-blue-50: #e8eeff; /* @presenter Color */
+  --ds-primitive-color-blue-100: #ccddff; /* @presenter Color */
+  --ds-primitive-color-blue-300: #a3c2ff; /* @presenter Color */
+  --ds-primitive-color-blue-600: #4d62cb; /* @presenter Color */
+  --ds-primitive-color-blue-800: #223077; /* @presenter Color */
+  --ds-primitive-color-blue-950: #161f4b; /* @presenter Color */
+  --ds-primitive-color-blue-1000: #09172a; /* @presenter Color */
+  --ds-primitive-color-red-50: #fff0f3; /* @presenter Color */
+  --ds-primitive-color-red-100: #fce7ed; /* @presenter Color */
+  --ds-primitive-color-red-400: #f8678b; /* @presenter Color */
+  --ds-primitive-color-red-500: #f54b75; /* @presenter Color */
+  --ds-primitive-color-red-700: #c6224b; /* @presenter Color */
+  --ds-primitive-color-red-900: #a61c3f; /* @presenter Color */
+  --ds-primitive-color-red-950: #751f38; /* @presenter Color */
+  --ds-primitive-color-red-1000: #3a1624; /* @presenter Color */
+  --ds-primitive-color-green-50: #e7f5ec; /* @presenter Color */
+  --ds-primitive-color-green-100: #d1efdd; /* @presenter Color */
+  --ds-primitive-color-green-300: #6dd6a0; /* @presenter Color */
+  --ds-primitive-color-green-500: #31a36d; /* @presenter Color */
+  --ds-primitive-color-green-900: #176b45; /* @presenter Color */
+  --ds-primitive-color-green-1000: #102a20; /* @presenter Color */
+  --ds-primitive-color-amber-50: #fff4d6; /* @presenter Color */
+  --ds-primitive-color-amber-300: #ffd166; /* @presenter Color */
+  --ds-primitive-color-amber-800: #694600; /* @presenter Color */
+  --ds-primitive-color-amber-1000: #352a14; /* @presenter Color */
+  --ds-primitive-color-transparent: rgba(0, 0, 0, 0); /* @presenter Color */
+
+  /**
+  * @tokens Typografie Primitive
+  */
+
+  --ds-primitive-typography-family-sans: 'TT Interfaces'; /* @presenter FontFamily */
+  --ds-primitive-typography-weight-regular: 400; /* @presenter FontWeight */
+  --ds-primitive-typography-weight-medium: 500; /* @presenter FontWeight */
+  --ds-primitive-typography-weight-semibold: 600; /* @presenter FontWeight */
+  --ds-primitive-typography-weight-bold: 700; /* @presenter FontWeight */
+  --ds-primitive-typography-size-xs: 12px; /* @presenter FontSize */
+  --ds-primitive-typography-size-sm: 14px; /* @presenter FontSize */
+  --ds-primitive-typography-size-md: 16px; /* @presenter FontSize */
+  --ds-primitive-typography-size-lg: 18px; /* @presenter FontSize */
+  --ds-primitive-typography-size-xl: 20px; /* @presenter FontSize */
+  --ds-primitive-typography-size-2xl: 24px; /* @presenter FontSize */
+  --ds-primitive-typography-size-3xl: 32px; /* @presenter FontSize */
+  --ds-primitive-typography-size-4xl: 40px; /* @presenter FontSize */
+  --ds-primitive-typography-size-5xl: 48px; /* @presenter FontSize */
+  --ds-primitive-typography-line-height-tight: 1.2; /* @presenter LineHeight */
+  --ds-primitive-typography-line-height-compact: 1.35; /* @presenter LineHeight */
+  --ds-primitive-typography-line-height-normal: 1.5; /* @presenter LineHeight */
+  --ds-primitive-typography-line-height-relaxed: 1.65; /* @presenter LineHeight */
+  --ds-primitive-typography-letter-spacing-tight: -0.25px; /* @presenter LetterSpacing */
+  --ds-primitive-typography-letter-spacing-normal: 0px; /* @presenter LetterSpacing */
+  --ds-primitive-typography-letter-spacing-wide: 0.25px; /* @presenter LetterSpacing */
+
+  /**
+  * @tokens Spacing
+  */
+
+  --ds-primitive-spacing-0: 0px; /* @presenter Spacing */
+  --ds-primitive-spacing-1: 4px; /* @presenter Spacing */
+  --ds-primitive-spacing-2: 8px; /* @presenter Spacing */
+  --ds-primitive-spacing-3: 12px; /* @presenter Spacing */
+  --ds-primitive-spacing-4: 16px; /* @presenter Spacing */
+  --ds-primitive-spacing-6: 24px; /* @presenter Spacing */
+  --ds-primitive-spacing-8: 32px; /* @presenter Spacing */
+  --ds-primitive-spacing-12: 48px; /* @presenter Spacing */
+  --ds-primitive-spacing-16: 64px; /* @presenter Spacing */
+  --ds-spacing-inline-xs: 4px; /* {primitive.spacing.1} @presenter Spacing */
+  --ds-spacing-inline-sm: 8px; /* {primitive.spacing.2} @presenter Spacing */
+  --ds-spacing-inline-md: 12px; /* {primitive.spacing.3} @presenter Spacing */
+  --ds-spacing-inline-lg: 16px; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-inset-sm: 8px; /* {primitive.spacing.2} @presenter Spacing */
+  --ds-spacing-inset-md: 16px; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-inset-lg: 24px; /* {primitive.spacing.6} @presenter Spacing */
+  --ds-spacing-stack-sm: 12px; /* {primitive.spacing.3} @presenter Spacing */
+  --ds-spacing-stack-md: 16px; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-stack-lg: 24px; /* {primitive.spacing.6} @presenter Spacing */
+
+  /**
+  * @tokens Radius und Rahmen
+  */
+
+  --ds-primitive-radius-none: 0px; /* @presenter BorderRadius */
+  --ds-primitive-radius-xs: 2px; /* @presenter BorderRadius */
+  --ds-primitive-radius-sm: 4px; /* @presenter BorderRadius */
+  --ds-primitive-radius-md: 8px; /* @presenter BorderRadius */
+  --ds-primitive-radius-lg: 12px; /* @presenter BorderRadius */
+  --ds-primitive-radius-xl: 16px; /* @presenter BorderRadius */
+  --ds-primitive-radius-pill: 9999px; /* @presenter BorderRadius */
+  --ds-primitive-border-width-thin: 1px;
+  --ds-primitive-border-width-default: 1px;
+  --ds-primitive-border-width-strong: 2px;
+  --ds-primitive-border-width-focus: 3px;
+  --ds-primitive-opacity-disabled: 0.48; /* @presenter Opacity */
+  --ds-primitive-opacity-hover-overlay: 0.08; /* @presenter Opacity */
+  --ds-primitive-opacity-pressed-overlay: 0.12; /* @presenter Opacity */
+  --ds-radius-control: 8px; /* {primitive.radius.md} @presenter BorderRadius */
+  --ds-radius-container: 12px; /* {primitive.radius.lg} @presenter BorderRadius */
+  --ds-radius-pill: 9999px; /* {primitive.radius.pill} @presenter BorderRadius */
+  --ds-border-width-default: 1px; /* {primitive.border-width.default} */
+  --ds-border-width-strong: 2px; /* {primitive.border-width.strong} */
+  --ds-opacity-disabled: 0.48; /* {primitive.opacity.disabled} @presenter Opacity */
+
+  /**
+  * @tokens Farben Semantic
+  */
+
+  --ds-color-surface-canvas: #f1f3f4; /* {primitive.color.neutral.50} @presenter Color */
+  --ds-color-surface-default: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-surface-raised: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-surface-subtle: #e5e8e9; /* {primitive.color.neutral.100} @presenter Color */
+  --ds-color-surface-brand: #011224; /* {primitive.color.neutral.950} @presenter Color */
+  --ds-color-surface-inverse: #011224; /* {primitive.color.neutral.950} @presenter Color */
+  --ds-color-content-primary: #011224; /* {primitive.color.neutral.950} @presenter Color */
+  --ds-color-content-secondary: #434a55; /* {primitive.color.neutral.700} @presenter Color */
+  --ds-color-content-muted: #5d6570; /* {primitive.color.neutral.600} @presenter Color */
+  --ds-color-content-placeholder: #5d6570; /* {primitive.color.neutral.600} @presenter Color */
+  --ds-color-content-disabled: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-content-on-brand: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-content-on-cta: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-content-inverse: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-content-link: #223077; /* {primitive.color.blue.800} @presenter Color */
+  --ds-color-content-link-hover: #161f4b; /* {primitive.color.blue.950} @presenter Color */
+  --ds-color-icon-primary: #011224; /* {semantic.color.content.primary} @presenter Color */
+  --ds-color-icon-secondary: #434a55; /* {semantic.color.content.secondary} @presenter Color */
+  --ds-color-icon-muted: #5d6570; /* {semantic.color.content.muted} @presenter Color */
+  --ds-color-brand-main: #011224; /* {primitive.color.neutral.950} @presenter Color */
+  --ds-color-brand-blue: #223077; /* {primitive.color.blue.800} @presenter Color */
+  --ds-color-brand-red: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-border-default: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-border-subtle: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-border-strong: #434a55; /* {primitive.color.neutral.700} @presenter Color */
+  --ds-color-border-brand: #223077; /* {primitive.color.blue.800} @presenter Color */
+  --ds-color-focus-ring-outer: #223077; /* {primitive.color.blue.800} @presenter Color */
+  --ds-color-focus-ring-inner: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
+  --ds-color-action-primary-background: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-action-primary-border: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-action-primary-content: #ffffff; /* {semantic.color.content.on-cta} @presenter Color */
+  --ds-color-action-primary-hover-background: #a61c3f; /* {primitive.color.red.900} @presenter Color */
+  --ds-color-action-primary-hover-border: #a61c3f; /* {primitive.color.red.900} @presenter Color */
+  --ds-color-action-primary-hover-content: #ffffff; /* {semantic.color.content.on-cta} @presenter Color */
+  --ds-color-action-primary-pressed-background: #751f38; /* {primitive.color.red.950} @presenter Color */
+  --ds-color-action-primary-pressed-border: #751f38; /* {primitive.color.red.950} @presenter Color */
+  --ds-color-action-primary-pressed-content: #ffffff; /* {semantic.color.content.on-cta} @presenter Color */
+  --ds-color-action-primary-disabled-background: #e5e8e9; /* {primitive.color.neutral.100} @presenter Color */
+  --ds-color-action-primary-disabled-border: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-action-primary-disabled-content: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-action-primary-outline-background: rgba(0, 0, 0, 0); /* {primitive.color.transparent} @presenter Color */
+  --ds-color-action-primary-outline-border: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-action-primary-outline-content: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-action-primary-outline-hover-background: #fff0f3; /* {primitive.color.red.50} @presenter Color */
+  --ds-color-action-primary-outline-hover-border: #c6224b; /* {primitive.color.red.700} @presenter Color */
+  --ds-color-action-primary-outline-hover-content: #a61c3f; /* {primitive.color.red.900} @presenter Color */
+  --ds-color-action-primary-outline-disabled-background: rgba(0, 0, 0, 0); /* {primitive.color.transparent} @presenter Color */
+  --ds-color-action-primary-outline-disabled-border: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-action-primary-outline-disabled-content: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-status-error-content: #a61c3f; /* {primitive.color.red.900} @presenter Color */
+  --ds-color-status-error-icon: #a61c3f; /* {semantic.color.status.error.content} @presenter Color */
+  --ds-color-status-error-background: #fff0f3; /* {primitive.color.red.50} @presenter Color */
+  --ds-color-status-error-border: #a61c3f; /* {primitive.color.red.900} @presenter Color */
+  --ds-color-status-success-content: #176b45; /* {primitive.color.green.900} @presenter Color */
+  --ds-color-status-success-icon: #176b45; /* {semantic.color.status.success.content} @presenter Color */
+  --ds-color-status-success-background: #e7f5ec; /* {primitive.color.green.50} @presenter Color */
+  --ds-color-status-success-border: #176b45; /* {primitive.color.green.900} @presenter Color */
+  --ds-color-status-warning-content: #694600; /* {primitive.color.amber.800} @presenter Color */
+  --ds-color-status-warning-icon: #694600; /* {semantic.color.status.warning.content} @presenter Color */
+  --ds-color-status-warning-background: #fff4d6; /* {primitive.color.amber.50} @presenter Color */
+  --ds-color-status-warning-border: #694600; /* {primitive.color.amber.800} @presenter Color */
+  --ds-color-status-information-content: #223077; /* {primitive.color.blue.800} @presenter Color */
+  --ds-color-status-information-icon: #223077; /* {semantic.color.status.information.content} @presenter Color */
+  --ds-color-status-information-background: #e8eeff; /* {primitive.color.blue.50} @presenter Color */
+  --ds-color-status-information-border: #223077; /* {primitive.color.blue.800} @presenter Color */
+
+  /**
+  * @tokens Typografie Semantic
+  */
+
+  --ds-typography-body-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-body-font-size: 16px; /* {primitive.typography.size.md} @presenter FontSize */
+  --ds-typography-body-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
+  --ds-typography-body-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
+  --ds-typography-body-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-body-small-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-body-small-font-size: 14px; /* {primitive.typography.size.sm} @presenter FontSize */
+  --ds-typography-body-small-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
+  --ds-typography-body-small-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
+  --ds-typography-body-small-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-body-strong-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-body-strong-font-size: 16px; /* {primitive.typography.size.md} @presenter FontSize */
+  --ds-typography-body-strong-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
+  --ds-typography-body-strong-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
+  --ds-typography-body-strong-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-label-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-label-font-size: 14px; /* {primitive.typography.size.sm} @presenter FontSize */
+  --ds-typography-label-font-weight: 500; /* {primitive.typography.weight.medium} @presenter FontWeight */
+  --ds-typography-label-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
+  --ds-typography-label-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-caption-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-caption-font-size: 12px; /* {primitive.typography.size.xs} @presenter FontSize */
+  --ds-typography-caption-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
+  --ds-typography-caption-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
+  --ds-typography-caption-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-heading-1-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-heading-1-font-size: 48px; /* {primitive.typography.size.5xl} @presenter FontSize */
+  --ds-typography-heading-1-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
+  --ds-typography-heading-1-line-height: 1.2; /* {primitive.typography.line-height.tight} @presenter LineHeight */
+  --ds-typography-heading-1-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-2-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-heading-2-font-size: 40px; /* {primitive.typography.size.4xl} @presenter FontSize */
+  --ds-typography-heading-2-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
+  --ds-typography-heading-2-line-height: 1.2; /* {primitive.typography.line-height.tight} @presenter LineHeight */
+  --ds-typography-heading-2-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-3-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-heading-3-font-size: 32px; /* {primitive.typography.size.3xl} @presenter FontSize */
+  --ds-typography-heading-3-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
+  --ds-typography-heading-3-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
+  --ds-typography-heading-3-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-4-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
+  --ds-typography-heading-4-font-size: 24px; /* {primitive.typography.size.2xl} @presenter FontSize */
+  --ds-typography-heading-4-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
+  --ds-typography-heading-4-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
+  --ds-typography-heading-4-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+
+  /**
+  * @tokens Komponenten
+  */
+
+  --ds-button-primary-background: #c6224b; /* {semantic.color.action.primary.background} @presenter Color */
+  --ds-button-primary-border: #c6224b; /* {semantic.color.action.primary.border} @presenter Color */
+  --ds-button-primary-content: #ffffff; /* {semantic.color.action.primary.content} @presenter Color */
+  --ds-button-outline-background: rgba(0, 0, 0, 0); /* {semantic.color.action.primary.outline-background} @presenter Color */
+  --ds-button-outline-border: #c6224b; /* {semantic.color.action.primary.outline-border} @presenter Color */
+  --ds-button-outline-content: #c6224b; /* {semantic.color.action.primary.outline-content} @presenter Color */
+}

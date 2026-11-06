@@ -1,0 +1,50 @@
+.root {
+  color: var(--ds-color-content-primary);
+}
+
+.fontStatus {
+  margin: 0 0 1rem;
+  font-family: var(--ds-typography-body-small-font-family), system-ui, sans-serif;
+  font-size: var(--ds-typography-body-small-font-size);
+}
+
+.table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  text-align: start;
+  vertical-align: baseline;
+  border-bottom: 1px solid var(--ds-color-border-subtle);
+}
+
+.table thead th {
+  font-family: var(--ds-typography-label-font-family), system-ui, sans-serif;
+  font-size: var(--ds-typography-label-font-size);
+  font-weight: var(--ds-typography-label-font-weight);
+}
+
+.values {
+  color: var(--ds-color-content-muted);
+  font-family: var(--ds-typography-caption-font-family), system-ui, sans-serif;
+  font-size: var(--ds-typography-caption-font-size);
+}
+
+/* Simuliert die Nutzer-Stylesheet-Werte aus WCAG 1.4.12 */
+.override * {
+  line-height: 1.5 !important;
+  letter-spacing: 0.12em !important;
+  word-spacing: 0.16em !important;
+}
+
+.srOnly {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
