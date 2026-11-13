@@ -12,9 +12,95 @@ StyleDictionary.registerTransform({
   },
 });
 
+/* ---------- Hilfsfunktionen für Einheiten ---------- */
+const lightTree = JSON.parse(await readFile('tokens/design-tokens.light.json', 'utf8'));
+
+const getNode = (tree, ref) => ref.split('.').reduce((node, key) => node?.[key], tree);
+
+const resolveRaw = (tree, value) => {
+  let v = value;
+  while (typeof v === 'string' && v.startsWith('{') && v.endsWith('}')) {
+    v = getNode(tree, v.slice(1, -1))?.$value;
+  }
+  return v;
+};
+
+// Liefert den px-Wert als Zahl oder null, egal ob Objekt ({ value, unit }) oder String ("12px")
+const toPx = (v) => {
+  if (v && typeof v === 'object') return v.unit === 'px' ? v.value : null;
+  if (typeof v === 'string' && /^-?[\d.]+px$/.test(v)) return parseFloat(v);
+  return null;
+};
+
+/* ---------- Größen in rem statt px ---------- */
+// Nur Schriftgrößen und Spacing. Rahmen, Radien und Laufweite bleiben unberührt.
+StyleDictionary.registerTransform({
+  name: 'size/rem-ds',
+  type: 'value',
+  transitive: true,
+  filter: (token) => {
+    const [, group, sub] = token.path;
+    const last = token.path.at(-1);
+    return (
+      group === 'spacing' ||
+      (group === 'typography' && (sub === 'size' || last === 'font-size'))
+    );
+  },
+  transform: (token) => {
+    const value = token.$value ?? token.value;
+    const px = toPx(value);
+    return px === null ? value : `${Number((px / 16).toFixed(4))}rem`;
+  },
+});
+
+/* ---------- Laufweite in em (relativ zur Schriftgröße des jeweiligen Stils) ---------- */
+// Schriftgröße (px) je semantischem Stil, z. B. { 'heading-1': 48, body: 16, … }
+const fontSizePx = {};
+for (const [style, props] of Object.entries(lightTree.semantic.typography)) {
+  const px = toPx(resolveRaw(lightTree, props['font-size']?.$value));
+  if (px) fontSizePx[style] = px;
+}
+
+StyleDictionary.registerTransform({
+  name: 'letter-spacing/em',
+  type: 'value',
+  transitive: true,
+  filter: (token) =>
+    token.path[0] === 'semantic' &&
+    token.path[1] === 'typography' &&
+    token.path.at(-1) === 'letter-spacing',
+  transform: (token) => {
+    const value = token.$value ?? token.value;
+    const px = toPx(value);
+    const size = fontSizePx[token.path[2]];
+    if (px === null || !size) return value;
+    const em = Number((px / size).toFixed(4));
+    return em === 0 ? '0' : `${em}em`;
+  },
+});
+
+/* ---------- Verweise der Laufweite vorab auflösen ---------- */
+// Damit Style Dictionary für diese Tokens den em-Wert ausgibt und nicht var(--…-tight)
+StyleDictionary.registerPreprocessor({
+  name: 'letter-spacing-literal',
+  preprocessor: (dictionary) => {
+    const typography = dictionary.semantic?.typography;
+    if (!typography) return dictionary;
+    for (const props of Object.values(typography)) {
+      const token = props?.['letter-spacing'];
+      if (token && typeof token.$value === 'string') {
+        token.$value = resolveRaw(dictionary, token.$value);
+      }
+    }
+    return dictionary;
+  },
+});
+
 const transforms = [
   ...StyleDictionary.hooks.transformGroups.css.filter((t) => t !== 'name/kebab'),
   'name/ds',
+  'size/rem-ds',
+  'letter-spacing/em',
 ];
 
 /* ---------- Format: annotierte CSS-Datei für storybook-design-token ---------- */
@@ -103,6 +189,7 @@ const isThemeToken = (token) =>
 const build = async ({ source, destination, format = 'css/variables', selector, filter }) => {
   const sd = new StyleDictionary({
     source: [source],
+    preprocessors: ['letter-spacing-literal'],
     usesDtcg: true,
     platforms: {
       css: {

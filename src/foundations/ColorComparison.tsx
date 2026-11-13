@@ -30,6 +30,8 @@ function Value({ mode }: { mode: Mode }) {
   );
 }
 
+const label = (group: string) => group.charAt(0).toUpperCase() + group.slice(1);
+
 export function ColorComparison() {
   const [onlyChanged, setOnlyChanged] = useState(false);
 
@@ -55,10 +57,10 @@ export function ColorComparison() {
 
       {groups.map((group) => (
         <section key={group}>
-          <h3>{group}</h3>
+          <h3 id={`farben-semantic-${group}`}>{label(group)}</h3>
           <table className={styles.table}>
             <caption className={styles.srOnly}>
-              Semantische Farben der Gruppe {group}: Light- und Dark-Werte
+              Semantische Farben der Gruppe {label(group)}: Light- und Dark-Werte
             </caption>
             <thead>
               <tr>

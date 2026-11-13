@@ -52,15 +52,15 @@
   --ds-primitive-typography-weight-medium: 500; /* @presenter FontWeight */
   --ds-primitive-typography-weight-semibold: 600; /* @presenter FontWeight */
   --ds-primitive-typography-weight-bold: 700; /* @presenter FontWeight */
-  --ds-primitive-typography-size-xs: 12px; /* @presenter FontSize */
-  --ds-primitive-typography-size-sm: 14px; /* @presenter FontSize */
-  --ds-primitive-typography-size-md: 16px; /* @presenter FontSize */
-  --ds-primitive-typography-size-lg: 18px; /* @presenter FontSize */
-  --ds-primitive-typography-size-xl: 20px; /* @presenter FontSize */
-  --ds-primitive-typography-size-2xl: 24px; /* @presenter FontSize */
-  --ds-primitive-typography-size-3xl: 32px; /* @presenter FontSize */
-  --ds-primitive-typography-size-4xl: 40px; /* @presenter FontSize */
-  --ds-primitive-typography-size-5xl: 48px; /* @presenter FontSize */
+  --ds-primitive-typography-size-xs: 0.75rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-sm: 0.875rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-md: 1rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-lg: 1.125rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-xl: 1.25rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-2xl: 1.5rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-3xl: 2rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-4xl: 2.5rem; /* @presenter FontSize */
+  --ds-primitive-typography-size-5xl: 3rem; /* @presenter FontSize */
   --ds-primitive-typography-line-height-tight: 1.2; /* @presenter LineHeight */
   --ds-primitive-typography-line-height-compact: 1.35; /* @presenter LineHeight */
   --ds-primitive-typography-line-height-normal: 1.5; /* @presenter LineHeight */
@@ -73,25 +73,25 @@
   * @tokens Spacing
   */
 
-  --ds-primitive-spacing-0: 0px; /* @presenter Spacing */
-  --ds-primitive-spacing-1: 4px; /* @presenter Spacing */
-  --ds-primitive-spacing-2: 8px; /* @presenter Spacing */
-  --ds-primitive-spacing-3: 12px; /* @presenter Spacing */
-  --ds-primitive-spacing-4: 16px; /* @presenter Spacing */
-  --ds-primitive-spacing-6: 24px; /* @presenter Spacing */
-  --ds-primitive-spacing-8: 32px; /* @presenter Spacing */
-  --ds-primitive-spacing-12: 48px; /* @presenter Spacing */
-  --ds-primitive-spacing-16: 64px; /* @presenter Spacing */
-  --ds-spacing-inline-xs: 4px; /* {primitive.spacing.1} @presenter Spacing */
-  --ds-spacing-inline-sm: 8px; /* {primitive.spacing.2} @presenter Spacing */
-  --ds-spacing-inline-md: 12px; /* {primitive.spacing.3} @presenter Spacing */
-  --ds-spacing-inline-lg: 16px; /* {primitive.spacing.4} @presenter Spacing */
-  --ds-spacing-inset-sm: 8px; /* {primitive.spacing.2} @presenter Spacing */
-  --ds-spacing-inset-md: 16px; /* {primitive.spacing.4} @presenter Spacing */
-  --ds-spacing-inset-lg: 24px; /* {primitive.spacing.6} @presenter Spacing */
-  --ds-spacing-stack-sm: 12px; /* {primitive.spacing.3} @presenter Spacing */
-  --ds-spacing-stack-md: 16px; /* {primitive.spacing.4} @presenter Spacing */
-  --ds-spacing-stack-lg: 24px; /* {primitive.spacing.6} @presenter Spacing */
+  --ds-primitive-spacing-0: 0rem; /* @presenter Spacing */
+  --ds-primitive-spacing-1: 0.25rem; /* @presenter Spacing */
+  --ds-primitive-spacing-2: 0.5rem; /* @presenter Spacing */
+  --ds-primitive-spacing-3: 0.75rem; /* @presenter Spacing */
+  --ds-primitive-spacing-4: 1rem; /* @presenter Spacing */
+  --ds-primitive-spacing-6: 1.5rem; /* @presenter Spacing */
+  --ds-primitive-spacing-8: 2rem; /* @presenter Spacing */
+  --ds-primitive-spacing-12: 3rem; /* @presenter Spacing */
+  --ds-primitive-spacing-16: 4rem; /* @presenter Spacing */
+  --ds-spacing-inline-xs: 0.25rem; /* {primitive.spacing.1} @presenter Spacing */
+  --ds-spacing-inline-sm: 0.5rem; /* {primitive.spacing.2} @presenter Spacing */
+  --ds-spacing-inline-md: 0.75rem; /* {primitive.spacing.3} @presenter Spacing */
+  --ds-spacing-inline-lg: 1rem; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-inset-sm: 0.5rem; /* {primitive.spacing.2} @presenter Spacing */
+  --ds-spacing-inset-md: 1rem; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-inset-lg: 1.5rem; /* {primitive.spacing.6} @presenter Spacing */
+  --ds-spacing-stack-sm: 0.75rem; /* {primitive.spacing.3} @presenter Spacing */
+  --ds-spacing-stack-md: 1rem; /* {primitive.spacing.4} @presenter Spacing */
+  --ds-spacing-stack-lg: 1.5rem; /* {primitive.spacing.6} @presenter Spacing */
 
   /**
   * @tokens Radius und Rahmen
@@ -193,50 +193,50 @@
   */
 
   --ds-typography-body-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-body-font-size: 16px; /* {primitive.typography.size.md} @presenter FontSize */
+  --ds-typography-body-font-size: 1rem; /* {primitive.typography.size.md} @presenter FontSize */
   --ds-typography-body-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
   --ds-typography-body-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
-  --ds-typography-body-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-body-letter-spacing: 0; /* @presenter LetterSpacing */
   --ds-typography-body-small-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-body-small-font-size: 14px; /* {primitive.typography.size.sm} @presenter FontSize */
+  --ds-typography-body-small-font-size: 0.875rem; /* {primitive.typography.size.sm} @presenter FontSize */
   --ds-typography-body-small-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
   --ds-typography-body-small-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
-  --ds-typography-body-small-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-body-small-letter-spacing: 0; /* @presenter LetterSpacing */
   --ds-typography-body-strong-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-body-strong-font-size: 16px; /* {primitive.typography.size.md} @presenter FontSize */
+  --ds-typography-body-strong-font-size: 1rem; /* {primitive.typography.size.md} @presenter FontSize */
   --ds-typography-body-strong-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
   --ds-typography-body-strong-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
-  --ds-typography-body-strong-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-body-strong-letter-spacing: 0; /* @presenter LetterSpacing */
   --ds-typography-label-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-label-font-size: 14px; /* {primitive.typography.size.sm} @presenter FontSize */
+  --ds-typography-label-font-size: 0.875rem; /* {primitive.typography.size.sm} @presenter FontSize */
   --ds-typography-label-font-weight: 500; /* {primitive.typography.weight.medium} @presenter FontWeight */
   --ds-typography-label-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
-  --ds-typography-label-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-label-letter-spacing: 0; /* @presenter LetterSpacing */
   --ds-typography-caption-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-caption-font-size: 12px; /* {primitive.typography.size.xs} @presenter FontSize */
+  --ds-typography-caption-font-size: 0.75rem; /* {primitive.typography.size.xs} @presenter FontSize */
   --ds-typography-caption-font-weight: 400; /* {primitive.typography.weight.regular} @presenter FontWeight */
   --ds-typography-caption-line-height: 1.5; /* {primitive.typography.line-height.normal} @presenter LineHeight */
-  --ds-typography-caption-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-caption-letter-spacing: 0; /* @presenter LetterSpacing */
   --ds-typography-heading-1-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-heading-1-font-size: 48px; /* {primitive.typography.size.5xl} @presenter FontSize */
+  --ds-typography-heading-1-font-size: 3rem; /* {primitive.typography.size.5xl} @presenter FontSize */
   --ds-typography-heading-1-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
   --ds-typography-heading-1-line-height: 1.2; /* {primitive.typography.line-height.tight} @presenter LineHeight */
-  --ds-typography-heading-1-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-1-letter-spacing: -0.0052em; /* @presenter LetterSpacing */
   --ds-typography-heading-2-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-heading-2-font-size: 40px; /* {primitive.typography.size.4xl} @presenter FontSize */
+  --ds-typography-heading-2-font-size: 2.5rem; /* {primitive.typography.size.4xl} @presenter FontSize */
   --ds-typography-heading-2-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
   --ds-typography-heading-2-line-height: 1.2; /* {primitive.typography.line-height.tight} @presenter LineHeight */
-  --ds-typography-heading-2-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-2-letter-spacing: -0.0063em; /* @presenter LetterSpacing */
   --ds-typography-heading-3-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-heading-3-font-size: 32px; /* {primitive.typography.size.3xl} @presenter FontSize */
+  --ds-typography-heading-3-font-size: 2rem; /* {primitive.typography.size.3xl} @presenter FontSize */
   --ds-typography-heading-3-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
   --ds-typography-heading-3-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
-  --ds-typography-heading-3-letter-spacing: -0.25px; /* {primitive.typography.letter-spacing.tight} @presenter LetterSpacing */
+  --ds-typography-heading-3-letter-spacing: -0.0078em; /* @presenter LetterSpacing */
   --ds-typography-heading-4-font-family: 'TT Interfaces'; /* {primitive.typography.family.sans} @presenter FontFamily */
-  --ds-typography-heading-4-font-size: 24px; /* {primitive.typography.size.2xl} @presenter FontSize */
+  --ds-typography-heading-4-font-size: 1.5rem; /* {primitive.typography.size.2xl} @presenter FontSize */
   --ds-typography-heading-4-font-weight: 600; /* {primitive.typography.weight.semibold} @presenter FontWeight */
   --ds-typography-heading-4-line-height: 1.35; /* {primitive.typography.line-height.compact} @presenter LineHeight */
-  --ds-typography-heading-4-letter-spacing: 0px; /* {primitive.typography.letter-spacing.normal} @presenter LetterSpacing */
+  --ds-typography-heading-4-letter-spacing: 0; /* @presenter LetterSpacing */
 
   /**
   * @tokens Komponenten
