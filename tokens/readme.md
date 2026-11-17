@@ -5,8 +5,7 @@
 - Format: DTCG Design Tokens Format Module 2025.10.
 - Jede Theme-Datei ist ein eigenständiges DTCG-JSON-Dokument mit den Gruppen `primitive`, `semantic` und `component`.
 - Primitive sind in Light und Dark identisch und absichtlich in beiden Dateien enthalten, damit jede Datei für sich auflösbar ist und die beiden Dateien als Theme-Modi importiert werden können.
-- Semantische Tokens aliasieren Primitive; Component-Tokens gibt es für den CTA-Button (`component.button`) und den Banner (`component.banner`). Zustände bleiben semantisch wiederverwendbar.
-- Transparenzen liegen als `primitive.color.alpha.{dark,light}-{10,70}` vor (Basis: neutral.950 bzw. neutral.0). Darauf bauen `semantic.color.content.inverse-secondary` und `semantic.color.action.ghost` / `ghost-inverse` auf; im Dark-Theme sind dunkle und helle Alphas jeweils vertauscht.
+- Semantische Tokens aliasieren Primitive; Component-Tokens sind auf die explizit gewünschte CTA-Button-Abbildung begrenzt. CTA-Zustände bleiben semantisch wiederverwendbar.
 - Benennung: kleingeschriebenes kebab-case; standardisierte DTCG-Felder und Typnamen behalten ihre vorgeschriebene Schreibweise.
 
 ## Brand-Farben
