@@ -1,0 +1,130 @@
+@layer components {
+  /* Figma „Banner“ (5679:7317). Abstände und Typo auf die nächstgelegenen Repo-Tokens gemappt;
+     bei Gleichstand (20 → 16/24, 40 → 32/48) wurde der kleinere Wert gewählt. */
+  .banner {
+    --_background: var(--ds-banner-background-neutral);
+    --_headline: var(--ds-banner-headline-default);
+    --_paragraph: var(--ds-banner-paragraph-default);
+    --_close-background: var(--ds-banner-close-background);
+    --_close-hover-background: var(--ds-banner-close-hover-background);
+    --_close-pressed-background: var(--ds-banner-close-pressed-background);
+    --_close-content: var(--ds-banner-close-content);
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    inline-size: 100%;
+    background-color: var(--_background);
+    border-radius: var(--ds-primitive-radius-none);
+
+    font-family: var(--ds-typography-body-font-family), system-ui, sans-serif;
+    font-size: var(--ds-primitive-typography-size-lg);
+    line-height: var(--ds-primitive-typography-line-height-compact);
+    letter-spacing: var(--ds-typography-body-letter-spacing);
+  }
+
+  /* ---------- Varianten ---------- */
+  .success { --_background: var(--ds-banner-background-success); }
+  .warning { --_background: var(--ds-banner-background-warning); }
+  .error   { --_background: var(--ds-banner-background-error); }
+
+  .snack {
+    --_background: var(--ds-banner-background-snack);
+    --_headline: var(--ds-banner-headline-inverse);
+    --_paragraph: var(--ds-banner-paragraph-inverse);
+    --_close-background: var(--ds-banner-close-inverse-background);
+    --_close-hover-background: var(--ds-banner-close-inverse-hover-background);
+    --_close-pressed-background: var(--ds-banner-close-inverse-pressed-background);
+    --_close-content: var(--ds-banner-close-inverse-content);
+  }
+
+  /* ---------- Text ---------- */
+  .text {
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--ds-spacing-inline-xs) var(--ds-spacing-inline-md);
+    min-inline-size: 0;
+    padding-block: var(--ds-spacing-inset-md) var(--ds-primitive-spacing-8);
+    padding-inline: var(--ds-spacing-inset-md);
+  }
+
+  .headline {
+    margin: 0;
+    color: var(--_headline);
+    font-weight: var(--ds-primitive-typography-weight-medium);
+  }
+
+  .paragraph {
+    color: var(--_paragraph);
+    font-weight: var(--ds-typography-body-font-weight);
+  }
+
+  .headline,
+  .paragraph {
+    overflow-wrap: anywhere;
+  }
+
+  .paragraph > :first-child { margin-block-start: 0; }
+  .paragraph > :last-child  { margin-block-end: 0; }
+
+  /* ---------- Schließen ---------- */
+  .close {
+    --_size: 2.5rem;
+
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    inline-size: var(--_size);
+    block-size: var(--_size);
+    margin-block-start: var(--ds-spacing-inset-sm);
+    margin-inline-end: var(--ds-spacing-inset-sm);
+    padding: 0;
+
+    border: 0;
+    border-radius: var(--ds-primitive-radius-xs);
+    background-color: var(--_close-background);
+    color: var(--_close-content);
+
+    cursor: pointer;
+    transition: background-color 120ms ease;
+  }
+
+  @media (hover: hover) {
+    .close:hover {
+      background-color: var(--_close-hover-background);
+    }
+  }
+
+  .close:active {
+    background-color: var(--_close-pressed-background);
+  }
+
+  /* Fokus wie beim Button: zweiteiliger Ring */
+  .close:focus-visible {
+    outline: 2px solid var(--ds-color-focus-ring-outer);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--ds-color-focus-ring-inner);
+  }
+
+  /* Icon aus Figma unverändert als Maske, Farbe kommt über currentColor aus den Tokens */
+  .closeIcon {
+    inline-size: 1.25rem;
+    block-size: 1.25rem;
+    background-color: currentColor;
+    mask: url('./cross.svg') center / contain no-repeat;
+  }
+
+  /* Windows-Kontrastmodus: Maske wäre unsichtbar, daher Systemfarbe erzwingen */
+  @media (forced-colors: active) {
+    .closeIcon { background-color: ButtonText; }
+    .close { border: 1px solid ButtonText; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .close { transition: none; }
+  }
+}

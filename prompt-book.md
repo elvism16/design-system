@@ -8,7 +8,7 @@ Arbeite zunächst ausschließlich lesend.
    Klassifiziere den Figma-Banner danach als neu, bestehend oder zu überarbeiten.
 
 2. Untersuche diesen Figma-Node mit Figma MCP:
-   [Link zum Banner-Komponentensatz in Figma]
+   https://www.figma.com/design/5UJoWRZJ7iqmfixMGp3F9Z/TECE-Design-System?node-id=5679-7317&t=odEcgyw9BOKTaAR5-1
 
 3. Erfasse nur tatsächlich erkennbare Varianten, Zustände, Verhalten,
    responsive Regeln sowie Figma Variables, Collections, Modi und Aliase.

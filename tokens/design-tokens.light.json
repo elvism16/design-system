@@ -454,6 +454,56 @@
           ],
           "alpha": 0
         }
+      },
+      "alpha": {
+        "dark-10": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.00392156862745098,
+              0.07058823529411765,
+              0.1411764705882353
+            ],
+            "alpha": 0.1
+          }
+        },
+        "dark-70": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.00392156862745098,
+              0.07058823529411765,
+              0.1411764705882353
+            ],
+            "alpha": 0.7
+          }
+        },
+        "light-10": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "alpha": 0.1
+          }
+        },
+        "light-70": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "alpha": 0.7
+          }
+        }
       }
     },
     "typography": {
@@ -817,6 +867,10 @@
         "link-hover": {
           "$type": "color",
           "$value": "{primitive.color.blue.950}"
+        },
+        "inverse-secondary": {
+          "$type": "color",
+          "$value": "{primitive.color.alpha.light-70}"
         }
       },
       "icon": {
@@ -962,6 +1016,42 @@
           "outline-disabled-content": {
             "$type": "color",
             "$value": "{primitive.color.neutral.500}"
+          }
+        },
+        "ghost": {
+          "background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.dark-10}"
+          },
+          "hover-background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.dark-10}"
+          },
+          "pressed-background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.dark-10}"
+          },
+          "content": {
+            "$type": "color",
+            "$value": "{semantic.color.icon.secondary}"
+          }
+        },
+        "ghost-inverse": {
+          "background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.light-10}"
+          },
+          "hover-background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.light-10}"
+          },
+          "pressed-background": {
+            "$type": "color",
+            "$value": "{primitive.color.alpha.light-10}"
+          },
+          "content": {
+            "$type": "color",
+            "$value": "{semantic.color.content.inverse-secondary}"
           }
         }
       },
@@ -1341,6 +1431,86 @@
         "content": {
           "$type": "color",
           "$value": "{semantic.color.action.primary.outline-content}"
+        }
+      }
+    },
+    "banner": {
+      "background": {
+        "neutral": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.subtle}"
+        },
+        "success": {
+          "$type": "color",
+          "$value": "{semantic.color.status.success.background}"
+        },
+        "warning": {
+          "$type": "color",
+          "$value": "{semantic.color.status.warning.background}"
+        },
+        "error": {
+          "$type": "color",
+          "$value": "{semantic.color.status.error.background}"
+        },
+        "snack": {
+          "$type": "color",
+          "$value": "{semantic.color.surface.inverse}"
+        }
+      },
+      "headline": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.content.primary}"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "{semantic.color.content.inverse}"
+        }
+      },
+      "paragraph": {
+        "default": {
+          "$type": "color",
+          "$value": "{semantic.color.content.secondary}"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "{semantic.color.content.inverse-secondary}"
+        }
+      },
+      "close": {
+        "background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost.background}"
+        },
+        "hover-background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost.hover-background}"
+        },
+        "pressed-background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost.pressed-background}"
+        },
+        "content": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost.content}"
+        }
+      },
+      "close-inverse": {
+        "background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost-inverse.background}"
+        },
+        "hover-background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost-inverse.hover-background}"
+        },
+        "pressed-background": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost-inverse.pressed-background}"
+        },
+        "content": {
+          "$type": "color",
+          "$value": "{semantic.color.action.ghost-inverse.content}"
         }
       }
     }

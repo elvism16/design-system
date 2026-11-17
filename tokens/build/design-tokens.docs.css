@@ -42,6 +42,10 @@
   --ds-primitive-color-amber-800: #694600; /* @presenter Color */
   --ds-primitive-color-amber-1000: #352a14; /* @presenter Color */
   --ds-primitive-color-transparent: rgba(0, 0, 0, 0); /* @presenter Color */
+  --ds-primitive-color-alpha-dark-10: rgba(1, 18, 36, 0.1); /* @presenter Color */
+  --ds-primitive-color-alpha-dark-70: rgba(1, 18, 36, 0.7); /* @presenter Color */
+  --ds-primitive-color-alpha-light-10: rgba(255, 255, 255, 0.1); /* @presenter Color */
+  --ds-primitive-color-alpha-light-70: rgba(255, 255, 255, 0.7); /* @presenter Color */
 
   /**
   * @tokens Typografie Primitive
@@ -138,6 +142,7 @@
   --ds-color-content-inverse: #ffffff; /* {primitive.color.neutral.0} @presenter Color */
   --ds-color-content-link: #223077; /* {primitive.color.blue.800} @presenter Color */
   --ds-color-content-link-hover: #161f4b; /* {primitive.color.blue.950} @presenter Color */
+  --ds-color-content-inverse-secondary: rgba(255, 255, 255, 0.7); /* {primitive.color.alpha.light-70} @presenter Color */
   --ds-color-icon-primary: #011224; /* {semantic.color.content.primary} @presenter Color */
   --ds-color-icon-secondary: #434a55; /* {semantic.color.content.secondary} @presenter Color */
   --ds-color-icon-muted: #5d6570; /* {semantic.color.content.muted} @presenter Color */
@@ -171,6 +176,14 @@
   --ds-color-action-primary-outline-disabled-background: rgba(0, 0, 0, 0); /* {primitive.color.transparent} @presenter Color */
   --ds-color-action-primary-outline-disabled-border: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
   --ds-color-action-primary-outline-disabled-content: #7d828a; /* {primitive.color.neutral.500} @presenter Color */
+  --ds-color-action-ghost-background: rgba(1, 18, 36, 0.1); /* {primitive.color.alpha.dark-10} @presenter Color */
+  --ds-color-action-ghost-hover-background: rgba(1, 18, 36, 0.1); /* {primitive.color.alpha.dark-10} @presenter Color */
+  --ds-color-action-ghost-pressed-background: rgba(1, 18, 36, 0.1); /* {primitive.color.alpha.dark-10} @presenter Color */
+  --ds-color-action-ghost-content: #434a55; /* {semantic.color.icon.secondary} @presenter Color */
+  --ds-color-action-ghost-inverse-background: rgba(255, 255, 255, 0.1); /* {primitive.color.alpha.light-10} @presenter Color */
+  --ds-color-action-ghost-inverse-hover-background: rgba(255, 255, 255, 0.1); /* {primitive.color.alpha.light-10} @presenter Color */
+  --ds-color-action-ghost-inverse-pressed-background: rgba(255, 255, 255, 0.1); /* {primitive.color.alpha.light-10} @presenter Color */
+  --ds-color-action-ghost-inverse-content: rgba(255, 255, 255, 0.7); /* {semantic.color.content.inverse-secondary} @presenter Color */
   --ds-color-status-error-content: #a61c3f; /* {primitive.color.red.900} @presenter Color */
   --ds-color-status-error-icon: #a61c3f; /* {semantic.color.status.error.content} @presenter Color */
   --ds-color-status-error-background: #fff0f3; /* {primitive.color.red.50} @presenter Color */
@@ -248,4 +261,21 @@
   --ds-button-outline-background: rgba(0, 0, 0, 0); /* {semantic.color.action.primary.outline-background} @presenter Color */
   --ds-button-outline-border: #c6224b; /* {semantic.color.action.primary.outline-border} @presenter Color */
   --ds-button-outline-content: #c6224b; /* {semantic.color.action.primary.outline-content} @presenter Color */
+  --ds-banner-background-neutral: #e5e8e9; /* {semantic.color.surface.subtle} @presenter Color */
+  --ds-banner-background-success: #e7f5ec; /* {semantic.color.status.success.background} @presenter Color */
+  --ds-banner-background-warning: #fff4d6; /* {semantic.color.status.warning.background} @presenter Color */
+  --ds-banner-background-error: #fff0f3; /* {semantic.color.status.error.background} @presenter Color */
+  --ds-banner-background-snack: #011224; /* {semantic.color.surface.inverse} @presenter Color */
+  --ds-banner-headline-default: #011224; /* {semantic.color.content.primary} @presenter Color */
+  --ds-banner-headline-inverse: #ffffff; /* {semantic.color.content.inverse} @presenter Color */
+  --ds-banner-paragraph-default: #434a55; /* {semantic.color.content.secondary} @presenter Color */
+  --ds-banner-paragraph-inverse: rgba(255, 255, 255, 0.7); /* {semantic.color.content.inverse-secondary} @presenter Color */
+  --ds-banner-close-background: rgba(1, 18, 36, 0.1); /* {semantic.color.action.ghost.background} @presenter Color */
+  --ds-banner-close-hover-background: rgba(1, 18, 36, 0.1); /* {semantic.color.action.ghost.hover-background} @presenter Color */
+  --ds-banner-close-pressed-background: rgba(1, 18, 36, 0.1); /* {semantic.color.action.ghost.pressed-background} @presenter Color */
+  --ds-banner-close-content: #434a55; /* {semantic.color.action.ghost.content} @presenter Color */
+  --ds-banner-close-inverse-background: rgba(255, 255, 255, 0.1); /* {semantic.color.action.ghost-inverse.background} @presenter Color */
+  --ds-banner-close-inverse-hover-background: rgba(255, 255, 255, 0.1); /* {semantic.color.action.ghost-inverse.hover-background} @presenter Color */
+  --ds-banner-close-inverse-pressed-background: rgba(255, 255, 255, 0.1); /* {semantic.color.action.ghost-inverse.pressed-background} @presenter Color */
+  --ds-banner-close-inverse-content: rgba(255, 255, 255, 0.7); /* {semantic.color.action.ghost-inverse.content} @presenter Color */
 }
